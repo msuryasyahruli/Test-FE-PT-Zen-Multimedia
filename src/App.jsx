@@ -1,4 +1,4 @@
-import Layout from "./components/Layout";
+import Layout from "./Components/Layout";
 import ThemeProvider from "./ThemeContext";
 
 function App() {
