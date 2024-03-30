@@ -1,13 +1,18 @@
 import React from 'react'
-import photo from '../assets/img/Produk.jpg'
+import headphone from '../assets/img/headphone.png'
+import watch from '../assets/img/watch.png'
+import bag from '../assets/img/bag.png'
+import shoes from '../assets/img/shoes.png'
+import gamepad from '../assets/img/gamepad.png'
+import camera from '../assets/img/camera.png'   
 
 const tableData = [
-    { Photo: photo, ProductName: 'Product 1', price: 100, Description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus?' },
-    { Photo: photo, ProductName: 'Product 2', price: 120, Description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, totam.' },
-    { Photo: photo, ProductName: 'Product 3', price: 80, Description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, eveniet.' },
-    { Photo: photo, ProductName: 'Product 4', price: 150, Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aut.' },
-    { Photo: photo, ProductName: 'Product 5', price: 90, Description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, dolor.' },
-    { Photo: photo, ProductName: 'Product 6', price: 110, Description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ipsum.' },
+    { Photo: headphone, ProductName: 'Headphone', price: 100, Description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, necessitatibus?' },
+    { Photo: watch, ProductName: 'Watch', price: 120, Description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, totam.' },
+    { Photo: bag, ProductName: 'Bag', price: 80, Description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, eveniet.' },
+    { Photo: shoes, ProductName: 'Shoes Casual', price: 150, Description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, aut.' },
+    { Photo: gamepad, ProductName: 'Gamepad', price: 90, Description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, dolor.' },
+    { Photo: camera, ProductName: 'Camera', price: 110, Description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ipsum.' },
 ];
 
 const MainContent = () => {

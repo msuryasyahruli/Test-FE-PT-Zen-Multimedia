@@ -58,6 +58,7 @@ nav {
   background-color: #00bbff;
   color: #fff;
   padding: 10px;
+  overflow-x: auto;
 }
 
 nav ul {
@@ -68,7 +69,6 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
 }
 
 nav ul li a {
@@ -177,7 +177,6 @@ td {
     position: fixed;
     top: 0;
     right: 0;
-    padding-block: 50px;
   }
 
   .sidebar.open {
