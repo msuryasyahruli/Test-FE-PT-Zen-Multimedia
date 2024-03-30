@@ -1,4 +1,7 @@
 import React from 'react'
+import { useTheme } from '../ThemeContext';
+
+//assets
 import headphone from '../assets/img/headphone.png'
 import watch from '../assets/img/watch.png'
 import bag from '../assets/img/bag.png'
@@ -16,13 +19,16 @@ const tableData = [
 ];
 
 const MainContent = () => {
+    const { theme } = useTheme();
+
     return (
         <>
             <main>
                 <article>
-                    <table>
+                    <table className={`product-table ${theme === 'dark' ? 'dark' : ''}`}>
                         <thead>
                             <tr>
+                                <th>No</th>
                                 <th>Photo</th>
                                 <th>Product name</th>
                                 <th>Price</th>
@@ -32,8 +38,9 @@ const MainContent = () => {
                         <tbody>
                             {tableData.map((data, index) => (
                                 <tr key={index}>
+                                    <td>{index + 1}.</td>
                                     <td>
-                                        <img src={data.Photo} alt="Foto Produk 1" />
+                                        <img src={data.Photo} alt={data.ProductName} className="product-image" />
                                     </td>
                                     <td>{data.ProductName}</td>
                                     <td>${data.price}</td>

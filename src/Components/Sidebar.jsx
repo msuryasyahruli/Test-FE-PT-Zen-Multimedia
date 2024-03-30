@@ -1,10 +1,13 @@
 import React from 'react'
+import Navigation from './Navigation'
 
 const Sidebar = ({ nav }) => {
     return (
         <>
             <aside id="sidebar" className={!nav ? "sidebar" : "sidebar open"}>
-                <h2>Sidebar</h2>
+                <div className="menu">
+                    <Navigation />
+                </div>
             </aside>
         </>
     )
